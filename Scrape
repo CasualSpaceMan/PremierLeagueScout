@@ -1,0 +1,8 @@
+import bs4 as BeautifulSoup
+import requests
+import pandas
+
+def Scrape(link):
+		soup = BeautifulSoup(requests.get(link), 'html.parser')
+		return soup
+		
